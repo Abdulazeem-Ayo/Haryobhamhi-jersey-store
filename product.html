@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Product | HARYOBHAMHI STORE</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar-container">
+
+      <a href="index.html" class="logo">
+        <div class="logo-icon">H</div>
+
+        <div class="logo-text">
+          <span>HARYOBHAMHI</span>
+          <small>STORE</small>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html" class="active">Shop</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+
+        <div class="search-box">
+          <span class="search-icon">⌕</span>
+          <input
+            type="text"
+            placeholder="Search for jerseys..."
+          >
+        </div>
+
+        <button
+          class="nav-icon cart-button"
+          id="cartButton"
+          aria-label="Shopping cart"
+        >
+          🛒
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+
+        <button class="nav-icon">
+          👤
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- PRODUCT DETAILS -->
+  <main class="product-page">
+
+    <div class="product-container">
+
+      <!-- BREADCRUMB -->
+      <div class="product-breadcrumb">
+
+        <a href="index.html">Home</a>
+
+        <span>→</span>
+
+        <a href="shop.html">Shop</a>
+
+        <span>→</span>
+
+        <span id="breadcrumbProduct">
+          Jersey
+        </span>
+
+      </div>
+
+
+      <!-- PRODUCT -->
+      <section class="product-details">
+
+        <!-- IMAGE -->
+        <div class="product-gallery">
+
+          <div class="product-main-image">
+
+            <span
+              class="product-badge"
+              id="productBadge"
+            >
+              -10%
+            </span>
+
+            <img
+              id="productImage"
+              src="images/real-madrid.png"
+              alt="Football Jersey"
+            >
+
+          </div>
+
+        </div>
+
+
+        <!-- INFO -->
+        <div class="product-info-page">
+
+          <span
+            class="product-category"
+            id="productCategory"
+          >
+            CLUB JERSEY
+          </span>
+
+          <h1 id="productName">
+            Real Madrid Home Jersey
+          </h1>
+
+          <div class="product-rating-page">
+
+            <span>★★★★★</span>
+
+            <span id="productReviews">
+              (12 Reviews)
+            </span>
+
+          </div>
+
+
+          <!-- PRICE -->
+          <div class="product-price-page">
+
+            <span id="productPrice">
+              ₦27,000
+            </span>
+
+            <del id="productOldPrice">
+              ₦30,000
+            </del>
+
+          </div>
+
+
+          <p
+            class="product-description"
+            id="productDescription"
+          >
+            Rep your team in style with this premium football jersey.
+            Designed for comfort, quality and everyday football culture.
+          </p>
+
+
+          <!-- SIZE -->
+          <div class="product-option">
+
+            <div class="option-heading">
+
+              <strong>Size</strong>
+
+              <a href="#">
+                Size Guide
+              </a>
+
+            </div>
+
+            <div class="size-options">
+
+              <button class="size-button">
+                S
+              </button>
+
+              <button class="size-button active">
+                M
+              </button>
+
+              <button class="size-button">
+                L
+              </button>
+
+              <button class="size-button">
+                XL
+              </button>
+
+              <button class="size-button">
+                XXL
+              </button>
+
+            </div>
+
+            <p
+              class="option-error"
+              id="sizeError"
+            ></p>
+
+          </div>
+
+
+          <!-- CUSTOMIZATION -->
+          <div class="customization-box">
+
+            <div class="customization-heading">
+
+              <div>
+                <strong>
+                  Customize Your Jersey
+                </strong>
+
+                <span>
+                  Optional
+                </span>
+              </div>
+
+              <span>
+                +₦2,000
+              </span>
+
+            </div>
+
+
+            <label for="customName">
+              Name on Jersey
+            </label>
+
+            <input
+              type="text"
+              id="customName"
+              placeholder="e.g. HARYOBHAMHI"
+              maxlength="15"
+            >
+
+
+            <label for="customNumber">
+              Number
+            </label>
+
+            <input
+              type="number"
+              id="customNumber"
+              placeholder="e.g. 10"
+              min="0"
+              max="99"
+            >
+
+            <small>
+              Custom name and number will be added to your jersey.
+            </small>
+
+          </div>
+
+
+          <!-- QUANTITY -->
+          <div class="quantity-section">
+
+            <strong>Quantity</strong>
+
+            <div class="product-quantity">
+
+              <button id="quantityMinus">
+                −
+              </button>
+
+              <span id="productQuantity">
+                1
+              </span>
+
+              <button id="quantityPlus">
+                +
+              </button>
+
+            </div>
+
+          </div>
+
+
+          <!-- ADD TO CART -->
+          <button
+            class="product-add-button"
+            id="productAddButton"
+          >
+            <span>
+              Add to Cart
+            </span>
+
+            <strong>
+              →
+            </strong>
+          </button>
+
+
+          <div
+            class="product-success"
+            id="productSuccess"
+          ></div>
+
+
+          <!-- FEATURES -->
+          <div class="product-features">
+
+            <div>
+              🚚
+              <span>
+                Nationwide Delivery
+              </span>
+            </div>
+
+            <div>
+              👕
+              <span>
+                Quality Jersey
+              </span>
+            </div>
+
+            <div>
+              🔢
+              <span>
+                Custom Name & Number
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+
+  <!-- CART OVERLAY -->
+  <div
+    class="cart-overlay"
+    id="cartOverlay"
+  ></div>
+
+
+  <!-- CART DRAWER -->
+  <aside
+    class="cart-drawer"
+    id="cartDrawer"
+  >
+
+    <div class="cart-header">
+
+      <div>
+        <span>YOUR BAG</span>
+        <h2>Shopping Cart</h2>
+      </div>
+
+      <button
+        class="close-cart"
+        id="closeCart"
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <div
+      class="cart-items"
+      id="cartItems"
+    ></div>
+
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+
+        <span>Subtotal</span>
+
+        <strong id="cartTotal">
+          ₦0
+        </strong>
+
+      </div>
+
+      <button
+        class="checkout-button"
+        id="checkoutButton"
+      >
+        Proceed to Checkout
+
+        <span>→</span>
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <script src="script.js"></script>
+  <script src="product.js"></script>
+
+</body>
+</html>
